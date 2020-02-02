@@ -1,0 +1,17 @@
+<h2>Title: {{selectedUser.title}}</h2>
+<div [ngStyle]="{
+    display: 'inline'
+}">
+    <h2 [ngStyle]="{
+        display: 'inline'
+    }">Body: </h2>
+    <p [ngStyle]="{
+        display: 'inline'
+    }">{{selectedUser.body}}</p>
+</div>
+
+<ul>
+    <li *ngFor="let user of users">
+        <app-user [user]='user' (userSelected)='userSelected(user)'></app-user>
+    </li>
+</ul>

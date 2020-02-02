@@ -1,0 +1,15 @@
+.user-container{
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.user-container__item{
+    display: table-column;
+    align-items: center;
+    justify-content: center;
+}
